@@ -30,7 +30,7 @@ Call - call(String action, RequestObject request) This is a global Method Presen
 global static BreadwinnerAPI.Response call(‘Action’,BreadwinnerAPI.Request request)
 
 ### BreadwinnerAPI inner classes
-<ul><li>
+<ul>
 <li>RequestObject - Class</li>
 <li>ResponseObject - Class</li>
 </ul>

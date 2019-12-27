@@ -1,88 +1,44 @@
 ---
 layout: default
-title: Configuration
+title: Request
 nav_order: 2
 ---
 
-# Configuration
+# Request
 {: .no_toc }
 
 
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's _config.yml file.
-{: .fs-6 .fw-300 }
+### RequestObject - Class
+You have to create an Instance for RequestObject and pass to the “BreadwinnerAPI.call()” method as one of the parameters. RequestObject req = new RequestObject(); It consists of the following variables:
 
-## Table of contents
-{: .no_toc .text-delta }
+## Options 
+It is a collection of type Map (Map<String, Object>), used to pass any type of config settings that we enable Ex: below options used for fetching records. contactid, ContactNumber, where, pagenumber, modifiedafter, – for contacts Invoicenumber, Invoiceid, where, pagenumber, modifiedafter – for invoices
 
-1. TOC
-{:toc}
+## xeroCustomer
+It is an instance of the AccountWrapper class. To Create/Insert customer we should pass values to variables which are needed.
 
----
+Ex: BreadwinnerAPI.AccountWrapper sc = new BreadwinnerAPI.AccountWrapper(); sc.name=’Test Customer’; //For all other variables you can refer here req.xeroCustomer = sc;
 
+## xeroInvoice
+It is an instance of the Invoice class. To Create/Insert customer we should pass values to variables which are needed.
+Ex: BreadwinnerAPI.Invoice sc = new BreadwinnerAPI.Invoice(); sc.CustomerId=’Test Customer’; //For all other variables you can refer here sc.description=’desc’;… req.xeroInvoice = sc;
 
-View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example.
+## Request Actions
+It’s a string, used to define the type of action that needs to be performed. We are providing below types of actions.
 
-## Site logo
+<ul>
 
-```yaml
-# Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/just-the-docs.png"
-```
-
-## Search
-
-```yaml
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
-
-# Enable support for hyphenated search words:
-search_tokenizer_separator: /[\s/]+/
-
-```
-
-## Aux links
-
-```yaml
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
-```
-
-## Heading anchor links
-
-```yaml
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false/nil
-heading_anchors: true
-```
-
-## Footer content
-
-```yaml
-# Footer content appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2017-2019 Patrick Marsceill. Distributed by an <a href=\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\">MIT license.</a>"
-```
-
-## Color scheme
-
-```yaml
-# Color scheme currently only supports "dark" or nil (default)
-color_scheme: "dark"
-```
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
-
-<script type="text/javascript" src="{{ "/assets/js/dark-mode-preview.js" | absolute_url }}"></script>
-
-See [Customization]({{ site.baseurl }}{% link docs/customization.md %}) for more information.
-
-## Google Analytics
-
-```yaml
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-5555555-55
-```
+<li>createCustomer - To create the customer in both Xero and Salesforce.</li>
+<li>updateCustomer - To update the customer in both Xero and salesforce.</li>
+<li>fetchCustomers - To get a list of customers. Ex: req.action = ‘createCustomer’;.</li>
+<li>Createinvoice - To create the Invoice in both Xero and Salesforce..</li>
+<li>Updateinvoice - To create the Invoice in both Xero and Salesforce.</li>
+<li>Fetchinvoice - To get a list of Invoice(s).</li>
+<li>Createbill - To create the Bill in both Xero and Salesforce.</li>
+<li>Updatebill - To update the Bill in both Xero and salesforce.</li>
+<li>Fetchbill - To get a list of Bill(s).</li>
+<li>Createpurchaseorder - To create the Purchase Order in both Xero and Salesforce.</li>
+<li>Updatepurchaseorder - To update the Purchase Order in both Xero and salesforce.</li>
+<li>Fetchpurchaseorder - To get a list of Purchase Order(s).</li>
+<li>
+<ul>
