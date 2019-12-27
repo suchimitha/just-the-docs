@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Layout
-parent: Utilities
+title: Update Xero Contact
+parent: XeroContactOperations
 nav_order: 2
 ---
 
