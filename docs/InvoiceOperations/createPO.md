@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Code
-parent: UI Components
-nav_order: 9
+parent: Invoice Operations
+nav_order: 7
 ---
 
 # Code

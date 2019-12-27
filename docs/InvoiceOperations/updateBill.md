@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lists
-parent: UI Components
+parent: Invoice Operations
 nav_order: 5
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Labels
-parent: UI Components
+parent: Invoice Operations
 nav_order: 3
 ---
 
