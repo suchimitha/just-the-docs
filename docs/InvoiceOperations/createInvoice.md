@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Typography
+title: Create Invoice
 parent: Invoice Operations
 nav_order: 1
 ---

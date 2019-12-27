@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tables
+title: Create Bill
 parent: UI Components
 nav_order: 4
 ---

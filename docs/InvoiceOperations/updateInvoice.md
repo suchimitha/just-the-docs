@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Buttons
+title: Update Invoice
 parent: Invoice Operations
 nav_order: 2
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lists
+title: Update Bill
 parent: Invoice Operations
 nav_order: 5
 ---

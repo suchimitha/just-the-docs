@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Labels
+title: Fetch Invoice
 parent: Invoice Operations
 nav_order: 3
 ---
