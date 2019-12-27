@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fetch Xero Contact
-parent: XeroContactOperations
+parent: Xero Contact Operations
 nav_order: 3
 ---
 
