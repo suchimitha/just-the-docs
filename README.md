@@ -35,15 +35,15 @@ Or install it yourself as:
 
 ## Usage
 
-[View the documentation](https://pmarsceill.github.io/just-the-docs/) for usage information.
+[View the documentation](https://suchimitha.github.io/just-the-docs/) for usage information.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsceill/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://suchimitha.github.io/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ### Submitting code changes:
 
-- Open a [Pull Request](https://github.com/pmarsceill/just-the-docs/pulls)
+- Open a [Pull Request](https://suchimitha.github.io/just-the-docs/pulls)
 - Ensure all CI tests pass
 - Await code review
 - Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
