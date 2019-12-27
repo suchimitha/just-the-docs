@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Xero Contact Operations
+title: Utilities
 nav_order: 4
 has_children: true
-permalink: docs/XeroContactOperations
+permalink: docs/utilities
 ---
 
 # Utilities
