@@ -48,7 +48,7 @@ The following is required to create or update a Invoice
 | Tracking        | TrackingItemWrapper | TrackingItemWrapper type  |
 
 
-| TrackingItemWrapper Field  | Type                          |
+| TrackingItemWrapper Field  | Type                          | Description |
 |:----------|:-------------------------------------|
 | Name         | String | The name of the tracking category (max length = 100)  |
 | Option          | String  | |

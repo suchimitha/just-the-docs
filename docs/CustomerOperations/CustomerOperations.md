@@ -34,7 +34,7 @@ The following is required to create or update a contact
 |:----------|:-------------------------------------|
 | `Sales`      | BillsOrSalesWrapper   |
 
-| BillsOrSalesWrapper Fields  | Type |Description|                         |
+| BillsOrSalesWrapper Fields  | Type |Description| 
 |:----------|:-------------------------------------|
 | Day       |   Integer | |
 | Type       | String | Payment Terms (DAYSAFTERBILLDATE, DAYSAFTERBILLMONTH, OFCURRENTMONTH, OFFOLLOWINGMONTH)  |

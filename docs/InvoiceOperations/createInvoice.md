@@ -13,7 +13,6 @@ nav_order: 1
 try{
 	BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
 	Invoice xi = new Invoice ();
-	xi.invoiceType='Invoice'; 
 	xi.InvoiceNumber = 'inv-123';
 	xi.DueDate = string.valueof(system.today());
 	Invoice.LineItemWrapper li = new Invoice.LineItemWrapper();

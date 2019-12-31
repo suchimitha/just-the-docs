@@ -13,8 +13,6 @@ nav_order: 4
 try{
 	BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
 	Invoice xi = new Invoice ();
-	xi.invoiceType='Invoice'; 
-	xi.InvoiceNumber = 'inv-123';
 	xi.DueDate = string.valueof(system.today());
 	Invoice.LineItemWrapper li = new Invoice.LineItemWrapper();
 	li.ItemCode = ''; li.Description ='li desc'; li.AccountCode='200';li.UnitAmount=300;li.Quantity=3;
@@ -29,7 +27,7 @@ try{
 			System.debug(er); 
 		}
 	}
-	system.debug('created Invoice' +res.Invoice);
+	system.debug('created Bill' +res.Invoice);
 }catch(Exception ex){
 	System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
 }
