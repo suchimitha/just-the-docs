@@ -14,7 +14,7 @@ This method allows users to retrieve stuff.
 ### ResponseObject - Class
 When we call “BreadwinnerAPI.call” method, User would get the response in the form of ResponseObject wrapper. It consists of three variables: status: It’s a string, which represents the Response Code/status code of the request. Ex.: ‘200’ - for success Response.
 
-### errors:
+### Errors:
 It is a list of instances of the “Error” class. It will be returned if there are any errors. With these, you can understand the reason for issues while interacting with Xero.
 
 Error class contains the following variables.
@@ -29,7 +29,7 @@ Error class contains the following variables.
 <li>Decline_code</li>
 <li>Elements</li>
 </ul>
-Ex.: message=REQUIRED_FIELD_MISSING : name, message=Enter the Xero customer name. param=XeroCustomer.name
+Ex: message=REQUIRED_FIELD_MISSING : name, message=Enter the Xero customer name. param=XeroCustomer.name
 
 ### xeroCustomer
 It’s XeroCustomer wrapper instance which contains created Xero Customer data along with Stipe Id.
