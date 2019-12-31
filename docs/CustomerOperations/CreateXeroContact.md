@@ -12,14 +12,14 @@ nav_order: 1
 
 ```scss
 try{
-	BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
-	AccountWrapper str = new AccountWrapper();
+	bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();	
+	bw_xero_api01.AccountWrapper str = new bw_xero_api01.AccountWrapper();
 	str.name='MY5 NAME Test Create -';             
 	req.xeroCustomer = str;
 
-	BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('createCustomer', req);
+	bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('createCustomer', req);
 	if(res.errors.size()>0){
-		for(BreadwinnerAPI.Error er :res.errors){
+		for(bw_xero_api01.BreadwinnerAPI.Error er :res.errors){
 			System.debug(er); 
 		}
 	}

@@ -10,13 +10,13 @@ nav_order: 6
 
 ```scss
 try{
-    BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();
+    bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();
     //req.options.put('invoicenumber','INV-0041');
     req.options.put('page','1');
 
-    BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('fetchBill', req);
+    bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('fetchBill', req);
     if(res.errors.size()>0){
-        for(BreadwinnerAPI.Error er :res.errors){
+        for(bw_xero_api01.BreadwinnerAPI.Error er :res.errors){
             System.debug(er); 
         }
     }

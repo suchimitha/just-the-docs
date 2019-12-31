@@ -30,7 +30,7 @@ E.g.: createcustomer, createInvoice,…
 ### Request: An instance of RequestObject is accepted.
 
 ### Signature
-global static BreadwinnerAPI.Response call(‘Action’,BreadwinnerAPI.Request request)
+global static bw_xero_api01.BreadwinnerAPI.Response call(‘Action’,bw_xero_api01.BreadwinnerAPI.Request request)
 
 ### BreadwinnerAPI inner classes
 <ul>
