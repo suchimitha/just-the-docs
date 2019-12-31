@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Fetch Xero Contact
-parent: Utilities
+parent: Contact Operations
 nav_order: 3
 ---
 
-# Color Utilities
-{: .no_toc }
+# Fetch Xero Contact
 
 ## Table of contents
 {: .no_toc .text-delta }

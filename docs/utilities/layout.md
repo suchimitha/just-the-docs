@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Update Xero Contact
-parent: Utilities
+parent: Contact Operations
 nav_order: 2
 ---
 
-# Layout Utilities
-{: .no_toc }
+# Update Xero Contact
 
 ## Table of contents
 {: .no_toc .text-delta }
