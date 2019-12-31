@@ -26,7 +26,7 @@ BreadwinnerAPI - Class This is a global Class where RequestObject and ResponseOb
 ## Methods
 Call - call(String action, RequestObject request) This is a global Method Present in BreadwinnerAPI’s class. It takes two parameters. 
 ### Action: Used to define the type of action that needs to be performed. 
-E.g.: createcustomer, createInvoice,… 
+E.g.: createCustomer, createInvoice,… 
 ### Request: An instance of RequestObject is accepted.
 
 ### Signature
