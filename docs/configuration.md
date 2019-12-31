@@ -21,6 +21,7 @@ Ex: BreadwinnerAPI.AccountWrapper sc = new BreadwinnerAPI.AccountWrapper(); sc.n
 
 ## xeroInvoice
 It is an instance of the Invoice class. To Create/Insert customer we should pass values to variables which are needed.
+
 Ex: BreadwinnerAPI.Invoice sc = new BreadwinnerAPI.Invoice(); sc.CustomerId=’Test Customer’; //For all other variables you can refer here sc.description=’desc’;… req.xeroInvoice = sc;
 
 ## Request Actions

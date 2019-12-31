@@ -37,4 +37,5 @@ Ex: AccountWrapper AC = Response.xeroCustomer;
 
 ### xeroInvoice
 It’s XeroInvoicewrapper instance which contains created Xero Customer data along with Stipe Id.
+
 Ex: Invoice sc = Response.XeroInvoice
