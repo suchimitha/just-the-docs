@@ -7,24 +7,24 @@ nav_order: 2
 
 # Update Xero Contact
 
-## Table of contents
-{: .no_toc .text-delta }
+## sample code 
 
-1. TOC
-{:toc}
+```scss
+try{
+	BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
+	AccountWrapper str = new AccountWrapper();
+	str.name='MY5 NAME Test Create -'; 
+	str.contactId ='tempId';		
+	req.xeroCustomer = str;
 
----
-
-## Spacing
-
-These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively.
-
-| Classname prefix | What it does                  |
-|:-----------------|:------------------------------|
-| `.m-`            | `margin`                      |
-| `.mx-`           | `margin-left`, `margin-right` |
-| `.my-`           | `margin top`, `margin bottom` |
-| `.mt-`           | `margin-top`                  |
-| `.mr-`           | `margin-right`                |
-| `.mb-`           | `margin-bottom`               |
-| `.ml-`           | `margin-left`                 |
+	BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('updateCustomer', req);
+	if(res.errors.size()>0){
+		for(BreadwinnerAPI.Error er :res.errors){
+			System.debug(er); 
+		}
+	}
+	system.debug('created customer' +res.xeroCustomer);
+}catch(Exception ex){
+	System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
+}
+```

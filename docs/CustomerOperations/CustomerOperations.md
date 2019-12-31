@@ -26,7 +26,7 @@ The following is required to create or update a contact
 | BillingState      | max length = 255              |
 | BillingCountry      | max length = 50, [A-Z], [a-z] only              |
 | BillingPostalCode      | max length = 50             |
-| Phone      |               |
+| Phone      |        Phone number of contact       |
 | ContactID      | Xero identifier              |
 
 
@@ -36,7 +36,7 @@ The following is required to create or update a contact
 
 | BillsOrSalesWrapper Fields  | Type                          |
 |:----------|:-------------------------------------|
-| Day       | All screens until the next modifier  |
+| Day       |   |
 | Type       | Payment Terms (DAYSAFTERBILLDATE, DAYSAFTERBILLMONTH, OFCURRENTMONTH, OFFOLLOWINGMONTH)  |
 
-
+{: .fs-6 .fw-300 }
