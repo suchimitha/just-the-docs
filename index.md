@@ -24,7 +24,10 @@ Breadwinner Provides Apex classes and methods. Users can use these, in their own
 BreadwinnerAPI - Class This is a global Class where RequestObject and ResponseObject are present. So you can access these Classes from BreadwinnerAPI Class.
 
 ### Methods
-Call - call(String action, RequestObject request) This is a global Method Present in BreadwinnerAPI’s class. It takes two parameters. Action: Used to define the type of action that needs to be performed. E.g.: createcustomer, createInvoice,… Request: An instance of RequestObject is accepted.
+Call - call(String action, RequestObject request) This is a global Method Present in BreadwinnerAPI’s class. It takes two parameters. 
+### Action: Used to define the type of action that needs to be performed. 
+E.g.: createcustomer, createInvoice,… 
+### Request: An instance of RequestObject is accepted.
 
 ### Signature
 global static BreadwinnerAPI.Response call(‘Action’,BreadwinnerAPI.Request request)

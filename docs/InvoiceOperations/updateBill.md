@@ -5,95 +5,33 @@ parent: Invoice Operations
 nav_order: 5
 ---
 
-# Lists
-{: .no_toc }
+# Update Bill
 
-## Table of contents
-{: .no_toc .text-delta }
+## Sample Code
 
-1. TOC
-{:toc}
+```scss
+try{
+             BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();
+             Invoice xi = new Invoice ();
+xi.InvoiceID = '5eac31f6-a05f-4a84-b3aa-47154c82afca';
+xi.DueDate = string.valueof(system.today()+30);
+Invoice.LineItemWrapper li = new Invoice.LineItemWrapper();
+li.ItemCode = ''; li.Description ='li desc';li.UnitAmount=500;li.Quantity=3;li.AccountCode='200';
+list<Invoice.LineItemWrapper> lineitems = new list<Invoice.LineItemWrapper>();
+lineitems.add(li);
+xi.LineItems = lineitems;
+xi.ClientId = '39efa556-8dda-4c81-83d3-a631e59eb6d3';
+req.xeroInvoice= xi;
 
+
+             BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('updateBill', req);
+             if(res.errors.size()>0){
+                 for(BreadwinnerAPI.Error er :res.errors){
+                     System.debug(er); 
+                 }
+             }
+ 	system.debug('created customer' +res.Invoice);
+         }catch(Exception ex){
+             System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
+         }
 ---
-
-Most lists can be rendered with pure Markdown.
-
-## Unordered list
-
-<div class="code-example" markdown="1">
-- Item 1
-- Item 2
-- Item 3
-
-_or_
-
-* Item 1
-* Item 2
-* Item 3
-</div>
-```markdown
-- Item 1
-- Item 2
-- Item 3
-
-_or_
-
-* Item 1
-* Item 2
-* Item 3
-```
-
-## Ordered list
-
-<div class="code-example" markdown="1">
-1. Item 1
-1. Item 2
-1. Item 3
-</div>
-```markdown
-1. Item 1
-1. Item 2
-1. Item 3
-```
-
-## Task list
-
-<div class="code-example" markdown="1">
-- [ ] hello, this is a todo item
-- [ ] hello, this is another todo item
-- [x] goodbye, this item is done
-</div>
-```markdown
-- [ ] hello, this is a todo item
-- [ ] hello, this is another todo item
-- [x] goodbye, this item is done
-```
-
-## Definition list
-
-Definition lists require HTML syntax and aren't supported with the GitHub Flavored Markdown compiler.
-
-<div class="code-example" markdown="1">
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-</div>
-```html
-<dl>
-  <dt>Name</dt>
-  <dd>Godzilla</dd>
-  <dt>Born</dt>
-  <dd>1952</dd>
-  <dt>Birthplace</dt>
-  <dd>Japan</dd>
-  <dt>Color</dt>
-  <dd>Green</dd>
-</dl>
-```

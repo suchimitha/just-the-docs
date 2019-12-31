@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Sample Code
 
-```
+```scss
 try{
 	BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();	
 	Invoice xi = new Invoice ();

@@ -5,45 +5,24 @@ parent: Invoice Operations
 nav_order: 3
 ---
 
-# Labels
+# Fetch Invoice
 
-Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue.
+## Sample Code
 
-<div class="code-example" markdown="1">
-Default label
-{: .label }
-
-Blue label
-{: .label .label-blue }
-
-Stable
-{: .label .label-green }
-
-New release
-{: .label .label-purple }
-
-Coming soon
-{: .label .label-yellow }
-
-Deprecated
-{: .label .label-red }
-</div>
-```markdown
-Default label
-{: .label }
-
-Blue label
-{: .label .label-blue }
-
-Stable
-{: .label .label-green }
-
-New release
-{: .label .label-purple }
-
-Coming soon
-{: .label .label-yellow }
-
-Deprecated
-{: .label .label-red }
-```
+```scss
+try{
+             BreadwinnerAPI.RequestObject req = new  BreadwinnerAPI.RequestObject();
+ 	req.options.put('invoicenumber','INV-0041');
+    req.options.put('page','1');
+        
+     BreadwinnerAPI.ResponseObject res =  BreadwinnerAPI.call('fetchInvoice', req);
+             if(res.errors.size()>0){
+                 for(BreadwinnerAPI.Error er :res.errors){
+                     System.debug(er); 
+                 }
+             }
+ 	system.debug('created customer +res.Invoice);
+         }catch(Exception ex){
+             System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
+         }
+---
