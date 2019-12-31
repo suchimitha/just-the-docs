@@ -20,15 +20,20 @@ It is an instance of the bw_xero_api01.AccountWrapper class. To Create/Insert cu
 
 Ex: 
     bw_xero_api01.BreadwinnerAPI.AccountWrapper sc = new bw_xero_api01.BreadwinnerAPI.AccountWrapper(); 
+
     sc.name=’Test Customer’; //For all other variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
+
     req.xeroCustomer = sc;
 
 ## xeroInvoice
 It is an instance of the Invoice class. To Create/Insert customer we should pass values to variables which are needed.
 
 Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.Invoice(); 
-    inv.CustomerId=’Test Customer’; //For all other variables you can refer here 
+
+    inv.CustomerId=’Test Customer’; //For all other variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
+
     inv.description=’desc’;… 
+
     req.xeroInvoice = inv;
 
 ## Request Actions
