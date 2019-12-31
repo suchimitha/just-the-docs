@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create Xero Contact
-parent: CustomerOperations
+parent: Utilities
 nav_order: 1
 ---
 
