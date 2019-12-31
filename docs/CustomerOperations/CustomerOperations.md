@@ -3,7 +3,7 @@ layout: default
 title: Contact Operations
 nav_order: 5
 has_children: true
-permalink: docs/utilities
+permalink: docs/CustomerOperations
 ---
 
 # Contact Operations
