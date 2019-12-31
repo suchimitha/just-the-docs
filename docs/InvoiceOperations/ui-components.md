@@ -10,28 +10,27 @@ permalink: /docs/InvoiceOperations
 
 The following is required to create or update a Invoice
 
-| Field  | Type                          | Description|
+| Field  | Type               | Valid for           | Description|
 |:----------|:-------------------------------------|
-| InvoiceNumber      | String |	Invoice - Unique alpha numeric code identifying invoice ( when missing will auto-generate from your Organisation Invoice Settings) (max length = 255)	Bill - non-unique alpha numeric code identifying invoice. This value will also display as Reference in the UI. (max length = 255)  |
-| Reference   | String  | Invoice only - additional reference number (max length = 255)                 |
-| BrandingThemeID  | String  | Branding Theme Id or value (max length = 255)              |
-| CurrencyCode  | String | The currency that invoice has been raised in              |
-| OpportunityId  | Id | Salesforce opportunity Id to map Invoice              |
-| AccountId   | Id | Salesforce Account Id to map Invoice              |
-| InvoiceDate | Date | Date invoice was issued - YYYY-MM-DD. If the Date element is not specified it will default to the current date based on the timezone setting of the organisation              |
-| DueDate  | String | Date invoice is due - YYYY-MM-DD              |
-| ClientId   | String | Xero generated unique identifier for Xero Contact (Xero Id)              |
-| Contact  | ContactWrapper | Last name of contact person (max length = 255)              |
-| LineItems  | LineItemWrapper| See LineItems. The LineItems collection can contain any number of individual LineItem sub-elements.              |
-
-| AttentionTo  | String | The person that the delivery is going to              |
-| DeliveryAddress  | String | The address the goods are to be delivered to              |
-| DeliveryInstructions  | String | A free text field for instructions (500 characters max)              |
-| Telephone  | String | The phone number for the person accepting the delivery              |
-| PurchaseOrderID | String | Xero generated unique identifier for purchase order              |
-| PurchaseOrderNumber | String | Last name of contact person (max length = 255)              |
-| DeliveryDate | String | Date the goods are to be delivered - YYYY-MM-DD              |
-| PurchaseOrderDate | String | Date purchase order was issued - YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation              |
+| InvoiceNumber      | String | All | Invoice - Unique alpha numeric code identifying invoice ( when missing will auto-generate from your Organisation Invoice Settings) (max length = 255)	Bill - non-unique alpha numeric code identifying invoice. This value will also display as Reference in the UI. (max length = 255)  |
+| Reference   | String  |  All | Invoice only - additional reference number (max length = 255)                 |
+| BrandingThemeID  | String  | All | Branding Theme Id or value (max length = 255)              |
+| CurrencyCode  | String |  All | The currency that invoice has been raised in              |
+| OpportunityId  | Id |  All | Salesforce opportunity Id to map Invoice              |
+| AccountId   | Id |  All | Salesforce Account Id to map Invoice              |
+| InvoiceDate | Date |  Invoice, Bill | Date invoice was issued - YYYY-MM-DD. If the Date element is not specified it will default to the current date based on the timezone setting of the organisation              |
+| DueDate  | String |  Invoice, Bill |Date invoice is due - YYYY-MM-DD              |
+| ClientId   | String |  All | Xero generated unique identifier for Xero Contact (Xero Id)              |
+| Contact  | ContactWrapper |  All | Last name of contact person (max length = 255)              |
+| LineItems  | LineItemWrapper|  All | See LineItems. The LineItems collection can contain any number of individual LineItem sub-elements.              |
+| AttentionTo  | String |  Purchase Order | The person that the delivery is going to              |
+| DeliveryAddress  | String | Purchase Order | The address the goods are to be delivered to              |
+| DeliveryInstructions  | String | Purchase Order | A free text field for instructions (500 characters max)              |
+| Telephone  | String | Purchase Order | The phone number for the person accepting the delivery              |
+| PurchaseOrderID | String | Purchase Order | Xero generated unique identifier for purchase order              |
+| PurchaseOrderNumber | String | Purchase Order | Last name of contact person (max length = 255)              |
+| DeliveryDate | String | Purchase Order | Date the goods are to be delivered - YYYY-MM-DD              |
+| PurchaseOrderDate | String | Purchase Order | Date purchase order was issued - YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation              |
 
 
 | Field  | Type                          | Description|
