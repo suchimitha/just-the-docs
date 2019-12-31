@@ -72,14 +72,12 @@ Sometimes you will want to create a page with many children (a section). First, 
 |   |   |-- code.md
 |   |   |-- labels.md
 |   |   |-- tables.md
-|   |   +-- typography.md
 |   |
 |   |-- utilities
 |   |   |-- index.md      (parent page)
 |   |   |-- color.md
 |   |   |-- layout.md
 |   |   |-- responsive-modifiers.md
-|   |   +-- typography.md
 |   |
 |   |-- (other md files, pages with no children)
 |   +-- ..

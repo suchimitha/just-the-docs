@@ -78,20 +78,3 @@ Wrap the button in a container that uses the [font-size utility classes]({{ site
 ```
 
 ### Spacing between buttons
-
-Use the [margin utility classes]({{ site.baseurl }}{% link docs/utilities/layout.md %}#spacing) to add spacing between two buttons in the same block.
-
-<div class="code-example" markdown="1">
-[Button with space](http://example.com/){: .btn .btn-purple .mr-2 }
-[Button ](http://example.com/){: .btn .btn-blue .mr-2 }
-
-[Button with more space](http://example.com/){: .btn .btn-green .mr-4 }
-[Button ](http://example.com/){: .btn .btn-blue }
-</div>
-```markdown
-[Button with space](http://example.com/){: .btn .btn-purple .mr-2 }
-[Button ](http://example.com/){: .btn .btn-blue }
-
-[Button with more space](http://example.com/){: .btn .btn-green .mr-4 }
-[Button ](http://example.com/){: .btn .btn-blue }
-```
