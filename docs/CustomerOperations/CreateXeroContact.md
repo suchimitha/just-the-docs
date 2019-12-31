@@ -11,9 +11,27 @@ Just the Docs spacing works in conjunction with a variety of modifiers that allo
 
 | Modifier  | Screen size                          |
 |:----------|:-------------------------------------|
-| (none)    | All screens until the next modifier  |
-| `xs`      | 320px (20rem) and up                 |
-| `sm`      | 500px (31.25rem) and up              |
-| `md`      | 740px (46.25rem) and up              |
-| `lg`      | 1120px (70rem) and up                |
-| `xl`      | 1400px (87.5rem) and up              |
+| Name      | All screens until the next modifier  |
+| FirstName | 320px (20rem) and up                 |
+| LastName  | 500px (31.25rem) and up              |
+| EmailAddress  | 740px (46.25rem) and up              |
+| TaxNumber | 1120px (70rem) and up                |
+| AccountsReceivableTaxType      | 1400px (87.5rem) and up              |
+| `PaymentTerms`      | 1400px (87.5rem) and up              |
+| BillingAttentionTo      | 1400px (87.5rem) and up              |
+| BillingStreet      | 1400px (87.5rem) and up              |
+| BillingCity       | 1400px (87.5rem) and up              |
+| BillingState      | 1400px (87.5rem) and up              |
+| BillingCountry      | 1400px (87.5rem) and up              |
+| BillingPostalCode      | 1400px (87.5rem) and up              |
+| Phone      | 1400px (87.5rem) and up              |
+
+
+| PaymentTermWrapper Fields  | Screen size                          |
+|:----------|:-------------------------------------|
+| Sales      | BillsOrSalesWrapper   |
+
+| BillsOrSalesWrapper Fields  | Screen size                          |
+|:----------|:-------------------------------------|
+| Day       | All screens until the next modifier  |
+| Type       | All screens until the next modifier  |
