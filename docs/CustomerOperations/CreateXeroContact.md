@@ -9,29 +9,30 @@ nav_order: 1
 
 Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes.
 
-| Modifier  | Screen size                          |
+| Field  | Type                          |
 |:----------|:-------------------------------------|
-| Name      | All screens until the next modifier  |
-| FirstName | 320px (20rem) and up                 |
-| LastName  | 500px (31.25rem) and up              |
-| EmailAddress  | 740px (46.25rem) and up              |
-| TaxNumber | 1120px (70rem) and up                |
-| AccountsReceivableTaxType      | 1400px (87.5rem) and up              |
-| `PaymentTerms`      | 1400px (87.5rem) and up              |
-| BillingAttentionTo      | 1400px (87.5rem) and up              |
-| BillingStreet      | 1400px (87.5rem) and up              |
-| BillingCity       | 1400px (87.5rem) and up              |
-| BillingState      | 1400px (87.5rem) and up              |
-| BillingCountry      | 1400px (87.5rem) and up              |
-| BillingPostalCode      | 1400px (87.5rem) and up              |
-| Phone      | 1400px (87.5rem) and up              |
+| Name      | Full name of contact/organisation (max length = 255)  |
+| FirstName | First name of contact person (max length = 255)                 |
+| LastName  | Last name of contact person (max length = 255)              |
+| EmailAddress  | Email address of contact person (umlauts not supported) (max length = 255)             |
+| TaxNumber | Tax number of contact - this is also known as the ABN (Australia), GST Number (New Zealand), VAT Number (UK) or Tax ID Number (US and global) in the Xero UI depending on which regionalized version of Xero you are using (max length = 50)                |
+| AccountsReceivableTaxType      | Default tax type used for contact on AR invoices              |
+| `PaymentTerms`      | The default payment terms for the contact - see  PaymentTermWrapper fields below             |
+| BillingAttentionTo      | max length = 255              |
+| BillingStreet      | max length = 500              |
+| BillingCity       | max length = 255              |
+| BillingState      | max length = 255              |
+| BillingCountry      | max length = 50, [A-Z], [a-z] only              |
+| BillingPostalCode      | max length = 50             |
+| Phone      |               |
+| ContactID      | Xero identifier              |
 
 
-| PaymentTermWrapper Fields  | Screen size                          |
+| PaymentTermWrapper Fields  | Type                          |
 |:----------|:-------------------------------------|
-| Sales      | BillsOrSalesWrapper   |
+| `Sales`      | BillsOrSalesWrapper   |
 
-| BillsOrSalesWrapper Fields  | Screen size                          |
+| BillsOrSalesWrapper Fields  | Type                          |
 |:----------|:-------------------------------------|
 | Day       | All screens until the next modifier  |
-| Type       | All screens until the next modifier  |
+| Type       | Payment Terms (DAYSAFTERBILLDATE, DAYSAFTERBILLMONTH, OFCURRENTMONTH, OFFOLLOWINGMONTH)  |
