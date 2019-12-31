@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Typography
-parent: Utilities
+parent: CustomerOperations
 nav_order: 4
 ---
 
