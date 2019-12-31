@@ -8,9 +8,8 @@ permalink: docs/CustomerOperations
 
 # Contact Operations
 
-CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size.
 
-
+The following is required to create or update a contact
 
 | Field  | Type                          |
 |:----------|:-------------------------------------|
@@ -40,4 +39,4 @@ CSS utility classes come in handy when you to want to override default styles to
 | Day       | All screens until the next modifier  |
 | Type       | Payment Terms (DAYSAFTERBILLDATE, DAYSAFTERBILLMONTH, OFCURRENTMONTH, OFFOLLOWINGMONTH)  |
 
-{: .fs-6 .fw-300 }
+
