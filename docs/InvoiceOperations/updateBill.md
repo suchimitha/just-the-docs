@@ -12,7 +12,7 @@ nav_order: 5
 ```scss
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();
-    Invoice xi = new Invoice ();
+    bw_xero_api01.Invoice xi = new bw_xero_api01.Invoice ();
     xi.InvoiceID = '5eac31f6-a05f-4a84-b3aa-47154c82afca';
     xi.DueDate = string.valueof(system.today()+30);
     bw_xero_api01.Invoice.LineItemWrapper li = new bw_xero_api01.Invoice.LineItemWrapper();
