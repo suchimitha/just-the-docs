@@ -28,7 +28,7 @@ try{
 			System.debug(er); 
 		}
 	}
-	system.debug('created Invoice' +res.Invoice);
+	system.debug('created Invoice' +res.xeroInvoice );
 }catch(Exception ex){
 	System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
 }

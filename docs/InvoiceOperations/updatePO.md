@@ -13,7 +13,7 @@ nav_order: 8
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();
     bw_xero_api01.Invoice xi = new bw_xero_api01.Invoice ();
-    xi.InvoiceID = '5eac31f6-a05f-4a84-b3aa-47154c82afca';
+    xi.PurchaseorderId = '5eac31f6-a05f-4a84-b3aa-47154c82afca';
     xi.DueDate = string.valueof(system.today()+30);
     bw_xero_api01.Invoice.LineItemWrapper li = new bw_xero_api01.Invoice.LineItemWrapper();
     li.ItemCode = ''; li.Description ='li desc';li.UnitAmount=500;li.Quantity=3;li.AccountCode='200';
@@ -30,7 +30,7 @@ try{
             System.debug(er); 
         }
     }
-    system.debug('Updated PO' +res.Invoice);
+    system.debug('Updated PO' +res.XeroInvoice);
 }catch(Exception ex){
     System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
 }

@@ -20,7 +20,7 @@ try{
             System.debug(er); 
         }
     }
-    system.debug('Purchase Orders +res);
+    system.debug('Purchase Orders '+res);
 }catch(Exception ex){
     System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
 }

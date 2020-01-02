@@ -25,13 +25,13 @@ try{
 	xi.LineItems = lineitems;
 	xi.ClientId = '39efa556-8dda-4c81-83d3-a631e59eb6d3';
 	req.xeroInvoice= xi;
-	bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('createBill', req);
+	bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('createPurchaseOrder', req);
 	if(res.errors.size()>0){
 		for(bw_xero_api01.BreadwinnerAPI.Error er :res.errors){
 			System.debug(er); 
 		}
 	}
-	system.debug('created purchase Order' +res.Invoice);
+	system.debug('created purchase Order' +res.XeroInvoice);
 }catch(Exception ex){
 	System.debug('Exception occurred while creating customers in Xero.'+ex.getStackTraceString());
 }

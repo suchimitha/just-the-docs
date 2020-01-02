@@ -12,7 +12,7 @@ nav_order: 3
 ```scss
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();
-    req.options.put('page','1');
+    req.options.put('pagenumber','1');
 
     bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('fetchInvoice', req);
     if(res.errors.size()>0){
@@ -20,7 +20,7 @@ try{
             System.debug(er); 
         }
     }
-    system.debug('Invoices +res);
+    system.debug('Invoices '+res);
 }catch(Exception ex){
     System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
 }

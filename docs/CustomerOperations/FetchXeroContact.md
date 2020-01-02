@@ -12,10 +12,11 @@ nav_order: 3
 ```scss
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();
-    req.options.put('invoicenumber','INV-0041');
+    req.options.put('contactid','1174683a-66d1-422c-b719-30176afa06ef'); // or
+    req.options.put('ContactNumber','TempNumber'); // or
     req.options.put('page','1');
 
-    bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('fetchinvoice', req);
+    bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('fetchcustomers', req);
         if(res.errors.size()>0){
             for(bw_xero_api01.BreadwinnerAPI.Error er :res.errors){
                 System.debug(er); 

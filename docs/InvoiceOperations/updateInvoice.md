@@ -30,7 +30,7 @@ try{
             System.debug(er); 
         }
     }
-    system.debug('Updated Invoice' +res.Invoice);
+    system.debug('Updated Invoice' +res.xeroInvoice);
 }catch(Exception ex){
     System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
 }
