@@ -30,7 +30,7 @@ It is an instance of the Invoice class. To Create/Insert customer we should pass
 
 Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.Invoice(); 
 
-    inv.CustomerId=’Test Customer’; //For all other variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
+    inv.CustomerId=’Test Customer’; 
 
     inv.description=’desc’;… 
 
