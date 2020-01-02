@@ -34,16 +34,16 @@ This is a global method present in BreadwinnerAPI’s class and returns list of 
 
 1. <b>Action</b>: Used to define the type of action that needs to be performed.<br/>
 E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}{% link docs/configuration.md %})
-2. <b>Request</b>: An instance of RequestObject is accepted.<br/>
-E.g :  BreadwinnerAPI.RequestObject req = new BreadwinnerAPI.RequestObject();
+2. <b>Request</b>: An instance of [RequestObject]({{ site.baseurl }}{% link docs/configuration.md %}) is accepted.<br/>
+E.g :  BreadwinnerAPI.RequestObject request = new BreadwinnerAPI.RequestObject();
 
 ### Signature
 global BreadwinnerAPI.Response call('Action', BreadwinnerAPI.Request request)
 
 ### BreadwinnerAPI inner classes
 <ul>
-<li>[RequestObject]({{ site.baseurl }}{% link docs/configuration.md %}) - Class</li>
-<li>[ResponseObject]({{ site.baseurl }}{% link docs/response.md %}) - Class</li>
+<li>RequestObject - Class</li>
+<li>ResponseObject - Class</li>
 </ul>
 
 
