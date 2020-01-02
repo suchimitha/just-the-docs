@@ -17,18 +17,18 @@ It is a collection of type Map (Map<String, Object>), used to pass any type of c
 Ex: below options used for fetching records. contactid, ContactNumber, where, pagenumber, modifiedafter, – for contacts Invoicenumber, Invoiceid, where, pagenumber, modifiedafter – for invoices
 
 ## xeroCustomer
-It is an instance of the bw_xero_api01.AccountWrapper class. To Create/Insert customer we should pass values to variables which are needed.
+It is an instance of the bw_xero_api01.AccountWrapper class. To Create/Insert customer we should pass values to variables which are needed. For all xeroCustomer variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
 ```yaml
 Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper sc = new bw_xero_api01.BreadwinnerAPI.AccountWrapper();
-    sc.name=’Test Customer’; //For all other variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
+    sc.name=’Test Customer’; 
     req.xeroCustomer = sc;
 ```
 
 ## xeroInvoice
-It is an instance of the Invoice class. To Create/Insert customer we should pass values to variables which are needed.
+It is an instance of the Invoice class. To Create/Insert customer we should pass values to variables which are needed. For all xeroInvoice variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
 ```yaml
 Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.Invoice();
-    inv.CustomerId=’Test Customer’; //For all other variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
+    inv.CustomerId=’Test Customer’; 
     inv.description=’desc’;… 
     req.xeroInvoice = inv;
 ```
