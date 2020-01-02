@@ -20,15 +20,15 @@ It is a list of instances of the “Error” class. It will be returned if there
 
 Error class contains the following variables.
 <ul>
-<li>type: The type of error returned. One of api_connection_error, api_error, authentication_error, card_error, idempotency_error, invalid_request_error, or rate_limit_error.</li>
-<li>message: Represents the Error.</li>
-<li>elements</li>
-<li>code: For some errors that could be handled programmatically, a short string indicating the error code reported.</li>
-<li>doc_url: A URL to more information about the error code reported.</li>
-<li>description: Represents the extra info regarding the error or exception.</li>
-<li>param: If the error is parameter-specific, that parameter related to the error. For example, you can use this to display a message near the correct form field.</li>
-<li>xero_type</li>
-<li>decline_code</li>
+<li><b>type</b>: The type of error returned. One of api_connection_error, api_error, authentication_error, card_error, idempotency_error, invalid_request_error, or rate_limit_error.</li>
+<li><b>message</b>: Represents the Error.</li>
+<li><b>elements</li>
+<li><b>code</b>: For some errors that could be handled programmatically, a short string indicating the error code reported.</li>
+<li><b>doc_url</b>: A URL to more information about the error code reported.</li>
+<li><b>description</b>: Represents the extra info regarding the error or exception.</li>
+<li><b>param</b>: If the error is parameter-specific, that parameter related to the error. For example, you can use this to display a message near the correct form field.</li>
+<li><b>xero_type</b></li>
+<li><b>decline_code</b></li>
 
 </ul>
 Ex: message=REQUIRED_FIELD_MISSING : name, message=Enter the Xero customer name. param=XeroCustomer.name

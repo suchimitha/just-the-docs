@@ -16,8 +16,6 @@ The following is required to create or update a Invoice
 | Reference   | String  |  All | Invoice only - additional reference number (max length = 255)                 |
 | BrandingThemeID  | String  | All | Branding Theme Id or value (max length = 255)              |
 | CurrencyCode  | String |  All | The currency that invoice has been raised in              |
-| OpportunityId  | Id |  All | Salesforce opportunity Id to map Invoice              |
-| AccountId   | Id |  All | Salesforce Account Id to map Invoice              |
 | InvoiceDate | Date |  Invoice, Bill | Date invoice was issued - YYYY-MM-DD. If the Date element is not specified it will default to the current date based on the timezone setting of the organisation              |
 | DueDate  | String |  Invoice, Bill |Date invoice is due - YYYY-MM-DD              |
 | ClientId   | String |  All | Xero generated unique identifier for Xero Contact (Xero Id)              |
@@ -33,19 +31,19 @@ The following is required to create or update a Invoice
 | PurchaseOrderDate | String | Purchase Order | Date purchase order was issued - YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation              |
 
 
-| Field  | Type                          | Description|
+| Field  | Type                         | Valid for            | Description|
 |:----------|:-------------------------------------|
-| ItemCode        | String | Xero generated identifier for an item  |
-| Description        | String | The sales description of the item  |
-| TaxType        | String | Used as an override if the default Tax Code for the selected AccountCode is not correct   |
-| AccountCode        | String | Default account code to be used for purchased/sale. Not applicable to the purchase details of tracked items  |
-| LineItemID        | String | Xero generated unique  |
-| UnitAmount        | Decimal  | Unit Price of the item. By default UnitPrice is rounded to two decimal places. You can use 4 decimal places by adding the unitdp=4 querystring parameter to your request.  |
-| TaxAmount       | Decimal | Full name of contact/organisation (max length = 255)  |
-| LineAmount         | Decimal | Full name of contact/organisation (max length = 255)  |
-| Quantity         | Decimal | The quantity of the item on hand  |
-| DiscountRate            | Decimal | The Discount rate of the item  |
-| Tracking        | TrackingItemWrapper | TrackingItemWrapper type  |
+| ItemCode        | String | All | Xero generated identifier for an item  |
+| Description        | String | All | The sales description of the item  |
+| TaxType        | String | All | Used as an override if the default Tax Code for the selected AccountCode is not correct   |
+| AccountCode        | String | All | Default account code to be used for purchased/sale. Not applicable to the purchase details of tracked items  |
+| LineItemID        | String | All | Xero generated unique  |
+| UnitAmount        | Decimal  | All | Unit Price of the item. By default UnitPrice is rounded to two decimal places. You can use 4 decimal places by adding the unitdp=4 querystring parameter to your request.  |
+| TaxAmount       | Decimal | All | Full name of contact/organisation (max length = 255)  |
+| LineAmount         | Decimal | All | Full name of contact/organisation (max length = 255)  |
+| Quantity         | Decimal | All | The quantity of the item on hand  |
+| DiscountRate            | Decimal | Invoice,Purchase Order | The Discount rate of the item  |
+| Tracking        | TrackingItemWrapper | All | TrackingItemWrapper type  |
 
 
 | TrackingItemWrapper Field  | Type                          | Description |
