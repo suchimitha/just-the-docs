@@ -8,6 +8,9 @@ nav_order: 6
 
 ## Sample Code
 
+Optional parameters to fetch Bill(s):
+InvoiceID, InvoiceNumber, where, orderby, pagenumber, modifiedafter.
+
 ```scss
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();

@@ -9,6 +9,10 @@ nav_order: 9
 
 ## Sample Code
 
+Optional parameters to fetch Purchase Order(s):
+PurchaseOrderID, PurchaseOrderNumber, where, orderby, pagenumber, modifiedafter.
+
+
 ```scss
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();

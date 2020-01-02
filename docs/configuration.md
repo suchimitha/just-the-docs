@@ -9,22 +9,26 @@ nav_order: 2
 
 
 ### RequestObject - Class
-You have to create an Instance for RequestObject and pass to the "BreadwinnerAPI.call()” method as one of the parameters. RequestObject req = new RequestObject(); It consists of the following variables:
+You have to create an Instance for RequestObject and pass to the "BreadwinnerAPI.call()” method as one of the parameters. 
+RequestObject req = new RequestObject(); 
 
-## Options 
+It consists of the following variables:
+## 1. Options 
 It is a collection of type Map (Map<String, Object>), used to pass any type of config settings that we enable.
+    below options used for fetching records. 
+    contactid, ContactNumber, where, pagenumber, modifiedafter, – for contacts 
+    Invoicenumber, Invoiceid, where, pagenumber, modifiedafter – for invoices
+Ex: 
 
-Ex: below options used for fetching records. contactid, ContactNumber, where, pagenumber, modifiedafter, – for contacts Invoicenumber, Invoiceid, where, pagenumber, modifiedafter – for invoices
-
-## xeroCustomer
+## 2. xeroCustomer
 It is an instance of the bw_xero_api01.AccountWrapper class. To Create/Insert customer we should pass values to variables which are needed. For all xeroCustomer variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
 ```yaml
-Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper sc = new bw_xero_api01.BreadwinnerAPI.AccountWrapper();
-    sc.name=’Test Customer’; 
-    req.xeroCustomer = sc;
+Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper XContact = new bw_xero_api01.BreadwinnerAPI.AccountWrapper();
+    XContact.name=’Test Customer’; 
+    req.xeroCustomer = sXContactc;
 ```
 
-## xeroInvoice
+## 3. xeroInvoice
 It is an instance of the Invoice class. To Create/Insert customer we should pass values to variables which are needed. For all xeroInvoice variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
 ```yaml
 Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.Invoice();
@@ -42,12 +46,12 @@ It’s a string, used to define the type of action that needs to be performed. W
 <li><b>fetchCustomers</b>: To get a list of customers.</li>
 <li><b>createinvoice</b> To create the Invoice in both Xero and Salesforce..</li>
 <li><b>updateinvoice</b>: To create the Invoice in both Xero and Salesforce.</li>
-<li><b>fetchinvoice</b>: To get a list of Invoice(s).</li>
+<li><b>fetchinvoice</b>: Use this action to retrieve one or many Invoices.</li>
 <li><b>createbill</b>: To create the Bill in both Xero and Salesforce.</li>
 <li><b>updatebill</b>: To update the Bill in both Xero and salesforce.</li>
-<li><b>fetchbill</b>: To get a list of Bill(s).</li>
+<li><b>fetchbill</b>: Use this action to retrieve one or many Bills.</li>
 <li><b>createpurchaseorder</b>: To create the Purchase Order in both Xero and Salesforce.</li>
 <li><b>updatepurchaseorder</b>: To update the Purchase Order in both Xero and salesforce.</li>
-<li><b>fetchpurchaseorder</b>: To get a list of Purchase Order(s).</li>
+<li><b>fetchpurchaseorder</b>: Use this action to retrieve one or many purchase orders.</li>
 
 </ul>
