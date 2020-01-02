@@ -29,16 +29,16 @@ This is a global Class where RequestObject and ResponseObject are present. So yo
 
 ## BreadwinnerAPI Methods
 The following are methods for BreadwinnerAPI. All are instance methods.
-<ul><li>Call</li></ul>
+<ul><li><b>Call</b></li></ul>
 This is a global method present in BreadwinnerAPI’s class and returns list of Customers or Invoices in the form of BreadwinnerAPI.Response. It takes two parameters.
 
-1. <b>Action</b>: Used to define the type of action that needs to be performed.
+1. <b>Action</b>: Used to define the type of action that needs to be performed.<br/>
 E.g : createCustomer, createInvoice,… 
-2. <b>Request</b>: An instance of RequestObject is accepted.
+2. <b>Request</b>: An instance of RequestObject is accepted.<br/>
 E.g :  BreadwinnerAPI.RequestObject req = new BreadwinnerAPI.RequestObject();
 
 ### Signature
- call(‘Action’, BreadwinnerAPI.Request request)
+global BreadwinnerAPI.Response call(‘Action’, BreadwinnerAPI.Request request)
 
 ### BreadwinnerAPI inner classes
 <ul>
