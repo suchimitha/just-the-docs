@@ -41,17 +41,17 @@ It’s a string, used to define the type of action that needs to be performed. W
 
 <ul>
 
-<li>createCustomer - To create the customer in both Xero and Salesforce.</li>
-<li>updateCustomer - To update the customer in both Xero and salesforce.</li>
-<li>fetchCustomers - To get a list of customers.</li>
-<li>createinvoice - To create the Invoice in both Xero and Salesforce..</li>
-<li>updateinvoice - To create the Invoice in both Xero and Salesforce.</li>
-<li>fetchinvoice - To get a list of Invoice(s).</li>
-<li>createbill - To create the Bill in both Xero and Salesforce.</li>
-<li>updatebill - To update the Bill in both Xero and salesforce.</li>
-<li>fetchbill - To get a list of Bill(s).</li>
-<li>createpurchaseorder - To create the Purchase Order in both Xero and Salesforce.</li>
-<li>updatepurchaseorder - To update the Purchase Order in both Xero and salesforce.</li>
-<li>fetchpurchaseorder - To get a list of Purchase Order(s).</li>
+<li>**createCustomer** - To create the customer in both Xero and Salesforce.</li>
+<li>**updateCustomer** - To update the customer in both Xero and salesforce.</li>
+<li>**fetchCustomers** - To get a list of customers.</li>
+<li>**createinvoice** - To create the Invoice in both Xero and Salesforce..</li>
+<li>**updateinvoice** - To create the Invoice in both Xero and Salesforce.</li>
+<li>**fetchinvoice** - To get a list of Invoice(s).</li>
+<li>**createbill** - To create the Bill in both Xero and Salesforce.</li>
+<li>**updatebill** - To update the Bill in both Xero and salesforce.</li>
+<li>**fetchbill** - To get a list of Bill(s).</li>
+<li>**createpurchaseorder** - To create the Purchase Order in both Xero and Salesforce.</li>
+<li>**updatepurchaseorder** - To update the Purchase Order in both Xero and salesforce.</li>
+<li><b>fetchpurchaseorder</b> - To get a list of Purchase Order(s).</li>
 
 </ul>
