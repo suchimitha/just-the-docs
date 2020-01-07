@@ -7,6 +7,8 @@ nav_order: 5
 
 # Update Bill
 
+To Update Bill pass the values to Invoice wrapper along with Id (InvoiceId) and assign it to request. xeroInvoice and then call the method BreadwinnerAPI.call().
+
 ## Sample Code
 
 ```scss

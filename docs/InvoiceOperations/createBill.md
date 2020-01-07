@@ -7,6 +7,9 @@ nav_order: 4
 
 # Create Bill
 
+To Create Bill pass the values to Invoice wrapper and assign it to request.xeroInvoice and then call the method BreadwinnerAPI.call(). here Customer (ClientId (Xero Contact Id)) is requred. 
+
+
 ## Sample Code
 
 ```scss

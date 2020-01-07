@@ -6,6 +6,8 @@ nav_order: 6
 ---
 # Fetch Bill
 
+To get/fetch the Bills pass the parameter to request.Options variabele and then call the method BreadwinnerAPI.call().
+
 ## Sample Code
 
 Optional parameters to fetch Bill(s):

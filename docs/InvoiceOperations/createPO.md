@@ -7,6 +7,8 @@ nav_order: 7
 
 # Create Purchase Order
 
+To Create Purchase Order pass the values to Invoice wrapper and assign it to request. xeroInvoice and then call the method BreadwinnerAPI.call(). here Customer (ClientId (Xero Contact Id)) is requred. 
+
 ## Sample Code
 
 ```scss
