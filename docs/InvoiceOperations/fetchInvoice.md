@@ -7,7 +7,7 @@ nav_order: 3
 
 # Fetch Invoice
 
-To get/fetch the Bills pass the parameter to request.Options variabele and then call the method BreadwinnerAPI.call().
+To get/fetch the Bills pass the parameters to request.Options variabele and then call the method BreadwinnerAPI.call(). Returns a map of Invoice  wrapper records (xeroIdInvoiceMap).
 
 ## Sample Code
 
@@ -26,7 +26,7 @@ try{
             System.debug(er); 
         }
     }
-    system.debug('Invoices '+res);
+    system.debug('Invoices '+res.xeroIdInvoiceMap);
 }catch(Exception ex){
     System.debug('Exception occurred while creating customers in Stripe.'+ex.getStackTraceString());
 }
