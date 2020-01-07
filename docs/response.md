@@ -11,9 +11,9 @@ This method allows users to retrieve stuff.
 
 
 ### ResponseObject - Class
-When we call “BreadwinnerAPI.call” method, User would get the response in the form of ResponseObject wrapper. It consists of following variables.<br/>
+When we call “BreadwinnerAPI.call()” method, User would get the response in the form of ResponseObject wrapper. It consists of following variables.<br/>
 
-### status: 
+### Status: 
 It’s a string, which represents the Response Code/status code of the request. <br/>
 Ex: ‘200’ - for success Response.
 
@@ -47,6 +47,6 @@ Ex: Invoice sc = Response.XeroInvoice
 
 ### xeroIdInvoiceMap 
     It's a map of Xero Invoices wrapper.
-    
+
 ### rawResponse
     it is the raw responce from Xero. 
