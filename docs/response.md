@@ -10,9 +10,11 @@ nav_order: 2
 This method allows users to retrieve stuff.
 
 
-### Response
 ### ResponseObject - Class
-When we call “BreadwinnerAPI.call” method, User would get the response in the form of ResponseObject wrapper. It consists of three variables: status: It’s a string, which represents the Response Code/status code of the request. 
+When we call “BreadwinnerAPI.call” method, User would get the response in the form of ResponseObject wrapper. It consists of following variables.<br/>
+
+### status: 
+It’s a string, which represents the Response Code/status code of the request. <br/>
 Ex: ‘200’ - for success Response.
 
 ### Errors:
@@ -33,9 +35,16 @@ Error class contains the following variables.
 Ex: message=REQUIRED_FIELD_MISSING : name, message=Enter the Xero customer name. param=XeroCustomer.name
 
 ### xeroCustomer
-It’s XeroCustomer wrapper instance which contains created Xero Customer data along with Stipe Id.
+It’s XeroCustomer wrapper instance which contains created Xero Customer data along with Xero Id.
 Ex: bw_xero_api01.AccountWrapper AC = Response.xeroCustomer;
 
 ### xeroInvoice
-It’s XeroInvoicewrapper instance which contains created Xero Customer data along with Stipe Id. 
+It’s XeroInvoicewrapper instance which contains created Xero Customer data along with Xero Id. 
 Ex: Invoice sc = Response.XeroInvoice
+
+### xeroIdCustomerMap
+    It's a map of Xero Customers wrapper. 
+### xeroIdInvoiceMap 
+    It's a map of Xero Invoices wrapper.
+### rawResponse
+    it is the raw responce from Xero. 

@@ -9,16 +9,16 @@ nav_order: 2
 
 
 ### RequestObject - Class
-You have to create an Instance for RequestObject and pass to the "BreadwinnerAPI.call()” method as one of the parameters. 
+You have to create an Instance for RequestObject and pass to the "BreadwinnerAPI.call()” method as one of the parameters. <br/>
 RequestObject req = new RequestObject(); 
 
 It consists of the following variables:
 ## 1. Options 
 It is a collection of type Map (Map<String, Object>), used to pass any type of config settings that we enable.
-    below options used for fetching records. 
-    contactid, ContactNumber, where, pagenumber, modifiedafter, – for contacts 
-    Invoicenumber, Invoiceid, where, pagenumber, modifiedafter – for invoices
-Ex: 
+    below options used for fetching records. <br/>
+    contactid, ContactNumber, where, pagenumber, modifiedafter, – for contacts <br/>
+    Invoicenumber, Invoiceid, where, pagenumber, modifiedafter – for invoices <br/>
+Ex:  req.options.put('pagenumber','1');
 
 ## 2. xeroCustomer
 It is an instance of the bw_xero_api01.AccountWrapper class. To Create/Insert customer we should pass values to variables which are needed. For all xeroCustomer variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})

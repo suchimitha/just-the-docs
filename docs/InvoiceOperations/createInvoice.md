@@ -9,6 +9,8 @@ nav_order: 1
 
 ## Sample Code
 
+To Create an Invoice pass Invoice wrapper values to request.xeroInvoice and call BreadwinnerAPI.call() method, here Customer (ClientId (Xero Contact Id)) is requred. 
+
 ```scss
 try{
 	bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();	
