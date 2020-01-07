@@ -44,7 +44,9 @@ Ex: Invoice sc = Response.XeroInvoice
 
 ### xeroIdCustomerMap
     It's a map of Xero Customers wrapper. 
+
 ### xeroIdInvoiceMap 
     It's a map of Xero Invoices wrapper.
+    
 ### rawResponse
     it is the raw responce from Xero. 
