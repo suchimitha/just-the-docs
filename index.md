@@ -25,12 +25,12 @@ Breadwinner Provides Apex classes and methods. Users can use these, in their own
 This is a global Class where RequestObject and ResponseObject are present. So you can access these Classes from BreadwinnerAPI Class.
 
 ### Namespace
-"bw_xero_api01" : Use this name space to access <b>BreadwinnerAPI</b> class and methods. 
+"bw_xero_api01" : Use this name space to access <i>BreadwinnerAPI</i> class and methods. 
 
 ## BreadwinnerAPI Methods
-The following are methods for <b>BreadwinnerAPI</b>. All are instance methods.
+The following are methods for <i>BreadwinnerAPI</i>. All are instance methods.
 <ul><li><b>Call()</b></li></ul>
-This is a global method present in <b>BreadwinnerAPI</b> class and returns list of Customers or Invoices in the form of [BreadwinnerAPI.Response]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
+This is a global method which will return list of Customers or Invoices in the form of [BreadwinnerAPI.ResponseObject]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
 
 1. <b>Action</b>: Used to define the type of action that needs to be performed.<br/>
 E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}{% link docs/configuration.md %})
@@ -38,11 +38,11 @@ E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}
 E.g :  BreadwinnerAPI.RequestObject request = new BreadwinnerAPI.RequestObject();
 
 ### Signature
-global BreadwinnerAPI.Response call('Action', request)
+BreadwinnerAPI.ResponseObject call(String Action, BreadwinnerAPI.RequestObject request)
 
 ### BreadwinnerAPI inner classes
 <ul>
-<li>RequestObject - Class</li>
+<li>RequestObject - Class</li> 
 <li>ResponseObject - Class</li>
 </ul>
 
