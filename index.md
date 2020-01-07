@@ -19,18 +19,18 @@ We have created two Handlers, one is for Request and another is for Response. Th
 
 Currently, we are providing API to create, update and fetching of Xero Contacts, Invoices, Bills, and Purchase Orders from Salesforce to Xero.
 
-Breadwinner Provides Apex classes and methods. Users can use these, in their own custom Apex code. The following are the classes and methods.
+Breadwinner Provides Apex classes and methods. Users can use these, in their own custom Apex code to perform there need. The following are the class and methods.
 
 ## BreadwinnerAPI Class 
 This is a global Class where RequestObject and ResponseObject are present. So you can access these Classes from BreadwinnerAPI Class.
 
 ### Namespace
-"bw_xero_api01" : Use this name space to access BreadwinnerApi class and methods. 
+"bw_xero_api01" : Use this name space to access <b>BreadwinnerAPI</b> class and methods. 
 
 ## BreadwinnerAPI Methods
-The following are methods for BreadwinnerAPI. All are instance methods.
+The following are methods for <b>BreadwinnerAPI</b>. All are instance methods.
 <ul><li><b>Call()</b></li></ul>
-This is a global method present in BreadwinnerAPI’s class and returns list of Customers or Invoices in the form of [BreadwinnerAPI.Response]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
+This is a global method present in <b>BreadwinnerAPI</b> class and returns list of Customers or Invoices in the form of [BreadwinnerAPI.Response]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
 
 1. <b>Action</b>: Used to define the type of action that needs to be performed.<br/>
 E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}{% link docs/configuration.md %})
@@ -38,7 +38,7 @@ E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}
 E.g :  BreadwinnerAPI.RequestObject request = new BreadwinnerAPI.RequestObject();
 
 ### Signature
-global BreadwinnerAPI.Response call('Action', BreadwinnerAPI.Request request)
+global BreadwinnerAPI.Response call('Action', request)
 
 ### BreadwinnerAPI inner classes
 <ul>
