@@ -13,7 +13,7 @@ You have to create an Instance for RequestObject and pass to the "BreadwinnerAPI
 RequestObject req = new RequestObject(); 
 
 It consists of the following variables:
-## 1. Options 
+## 1. options 
 It is a collection of type Map (Map<String, Object>), used to pass any type of config settings that we enable.
     below options used for fetching records. <br/>
     ContactId, ContactNumber, where, PageNumber, ModifiedAfter – for Contacts <br/>
@@ -24,17 +24,17 @@ Ex: req.options.put('PageNumber','1');
 ## 2. xeroCustomer
 It is an instance of the AccountWrapper (Xero Contact Wrapper) class. To Create/Insert customer we should pass values to variables which are needed. For all xeroCustomer variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
 ```yaml
-Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper XContact = new bw_xero_api01.BreadwinnerAPI.AccountWrapper();
-    XContact.name=’Test Customer’; 
-    req.xeroCustomer = sXContactc;
+Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper xContact = new bw_xero_api01.BreadwinnerAPI.AccountWrapper();
+    xContact.name = 'Test Customer'; 
+    req.xeroCustomer = xContactc;
 ```
 
 ## 3. xeroInvoice
 It is an instance of the Invoice wrapper class. To Create/Insert customer we should pass values to variables which are needed. For all Invoice variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
 ```yaml
 Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.Invoice();
-    inv.CustomerId=’Test Customer’; 
-    inv.description=’desc’;… 
+    inv.CustomerId = 'Test Customer'; 
+    inv.description = 'desc';… 
     req.xeroInvoice = inv;
 ```
 ## Request Actions
