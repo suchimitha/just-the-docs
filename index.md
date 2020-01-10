@@ -13,7 +13,7 @@ permalink: /
 ---
 
 ## Introduction
-Users can use this Breadwinner global API and make requests to Xero. Request & responses are defined in such a way that, you can make use of them and form the required things for the request and also to handle the response.
+Breadwinner global API used to make request to Xero. Request & responses are defined in such a way that, you can make use of them and form the required things for the request and also to handle the response.
 
 We have created two Handlers, one is for Request and another is for Response. They are named as RequestObject and ResponseObject respectively.
 
