@@ -22,7 +22,7 @@ It is a collection of type Map (Map<String, Object>), used to pass any type of c
 Ex: req.options.put('PageNumber','1');
 
 ## 2. xeroCustomer
-It is an instance of the AccountWrapper (Xero Contact Wrapper) class. To Create/Insert customer we should pass values to variables which are needed. For all xeroCustomer variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
+It is an instance of the AccountWrapper (Xero Contact Wrapper) class. To Create/Insert customer we should pass desired values to variables. For all xeroCustomer variables you can refer [here]({{ site.baseurl }}{% link docs/CustomerOperations/CustomerOperations.md %})
 ```yaml
 Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper xContact = new bw_xero_api01.BreadwinnerAPI.AccountWrapper();
     xContact.name = 'Test Customer'; 
@@ -30,7 +30,7 @@ Ex: bw_xero_api01.BreadwinnerAPI.AccountWrapper xContact = new bw_xero_api01.Bre
 ```
 
 ## 3. xeroInvoice
-It is an instance of the Invoice wrapper class. To Create/Insert customer we should pass values to variables which are needed. For all Invoice variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
+It is an instance of the Invoice wrapper class. To Create/Insert customer we should pass desired values to variables. For all Invoice variables you can refer [here]({{ site.baseurl }}{% link docs/InvoiceOperations/InvoiceOperations.md %}) 
 ```yaml
 Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.Invoice();
     inv.CustomerId = 'Test Customer'; 

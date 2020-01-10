@@ -7,7 +7,7 @@ nav_order: 3
 
 # Fetch Invoice
 
-To get/fetch the Bills pass the parameters to request.Options variabele and then call the method BreadwinnerAPI.call(). Returns a map of Invoice  wrapper records (xeroIdInvoiceMap).
+To get/fetch the Invoices, pass the parameters to request.Options variabele and then call the method BreadwinnerAPI.call(). This method returns a map of Invoice  wrapper records (xeroIdInvoiceMap).
 
 ## Sample Code
 

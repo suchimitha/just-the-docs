@@ -8,7 +8,7 @@ permalink: /docs/InvoiceOperations
 
 # Invoice Operations
 
-The following is required to create or update a Invoice
+The following parameters are required to create or update a Invoice
 
 | Field  | Type               | Valid for           | Description|
 |:----------|:-------------------------------------|
@@ -31,20 +31,24 @@ The following is required to create or update a Invoice
 | PurchaseOrderDate | String | Purchase Order | Date purchase order was issued - YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation              |
 
 
+### Line Item Fields
+
 | Field  | Type                         | Valid for            | Description|
 |:----------|:-------------------------------------|
 | ItemCode        | String | All | Xero generated identifier for an item  |
 | Description        | String | All | The sales description of the item  |
 | TaxType        | String | All | Used as an override if the default Tax Code for the selected AccountCode is not correct   |
 | AccountCode        | String | All | Default account code to be used for purchased/sale. Not applicable to the purchase details of tracked items  |
-| LineItemID        | String | All | Xero generated unique  |
+| LineItemID        | String | All | Xero generated unique Id |
 | UnitAmount        | Decimal  | All | Unit Price of the item. By default UnitPrice is rounded to two decimal places. You can use 4 decimal places by adding the unitdp=4 querystring parameter to your request.  |
-| TaxAmount       | Decimal | All | Full name of contact/organisation (max length = 255)  |
-| LineAmount         | Decimal | All | Full name of contact/organisation (max length = 255)  |
+| TaxAmount       | Decimal | All | Tax amount of invoice  |
+| LineAmount         | Decimal | All | Line Amount of invoice  |
 | Quantity         | Decimal | All | The quantity of the item on hand  |
 | DiscountRate            | Decimal | Invoice,Purchase Order | The Discount rate of the item  |
 | Tracking        | TrackingItemWrapper | All | TrackingItemWrapper type  |
 
+
+### TrackingItemWrapper Fields
 
 | TrackingItemWrapper Field  | Type                          | Description |
 |:----------|:-------------------------------------|

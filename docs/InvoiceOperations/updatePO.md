@@ -7,7 +7,7 @@ nav_order: 8
 
 # Update Purchase Order
 
-To Update purchase Order pass the values to Invoice wrapper along with Id (PurchaseorderId) and assign it to request. xeroInvoice and then call the method BreadwinnerAPI.call().
+To Update purchase Order pass the values to Invoice wrapper along with Id (PurchaseorderId) and assign it to request.xeroInvoice and then call the method BreadwinnerAPI.call().
 
 ## Sample Code
 

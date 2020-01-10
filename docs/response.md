@@ -18,7 +18,7 @@ It’s a string, which represents the Response Code/status code of the request. 
 Ex: ‘200’ - for success Response.
 
 ### Errors:
-It is a list of instances of the “Error” class. It will be returned if there are any errors. With these, you can understand the reason for issues while interacting with Xero.
+It is a list of instances of the “Error” class. You can understand the reason for issues while interacting with Xero based on the error type returned.
 
 Error class contains the following variables.
 <ul>
@@ -28,18 +28,18 @@ Error class contains the following variables.
 <li><b>code</b>: For some errors that could be handled programmatically, a short string indicating the error code reported.</li>
 <li><b>doc_url</b>: A URL to more information about the error code reported.</li>
 <li><b>description</b>: Represents the extra info regarding the error or exception.</li>
-<li><b>param</b>: If the error is parameter-specific, that parameter related to the error. For example, you can use this to display a message near the correct form field.</li>
+<li><b>param</b>: If the error is parameter-specific, that parameter related to the error is returned. For example, you can use this to display a message near the correct form field.</li>
 <li><b>xero_type</b>:</li>
 <li><b>decline_code</b>:</li>
 </ul>
 Ex: message=REQUIRED_FIELD_MISSING : name, message=Enter the Xero customer name. param=XeroCustomer.name
 
 ### xeroCustomer
-It’s XeroCustomer wrapper instance which contains created Xero Customer data along with Xero Id.
+It’s XeroCustomer wrapper instance which contains created Xero Customer data along with Xero Id.<br/>
 Ex: bw_xero_api01.AccountWrapper AC = Response.xeroCustomer;
 
 ### xeroInvoice
-It’s XeroInvoicewrapper instance which contains created Xero Customer data along with Xero Id. 
+It’s Xero Invoice wrapper instance which contains created Xero Invoice data along with Xero Id. <br/>
 Ex: Invoice sc = Response.XeroInvoice
 
 ### xeroIdCustomerMap

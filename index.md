@@ -17,18 +17,18 @@ Breadwinner global API used to make request to Xero. Request & responses are def
 
 We have created two Handlers, one is for Request and another is for Response. They are named as RequestObject and ResponseObject respectively.
 
-Currently, we are providing API to create, update and fetching of Xero Contacts, Invoices, Bills, and Purchase Orders from Salesforce to Xero.
+Currently, we are providing API to create, update and fetch Xero Contacts, Invoices, Bills, and Purchase Orders from Salesforce to Xero.
 
 Breadwinner Provides Apex classes and methods. Users can use these, in their own custom Apex code to perform there need. The following are the class and methods.
 
 ## BreadwinnerAPI Class 
-This is a global Class where RequestObject and ResponseObject are present. So you can access these Classes from <i>BreadwinnerAPI</i> Class.
+This is a global Class where you can access RequestObject and ResponseObject.
 
 ### Namespace
 "bw_xero_api01" : Use this name space to access <i>BreadwinnerAPI</i> class and methods. 
 
 ## BreadwinnerAPI Methods
-The following are methods for <i>BreadwinnerAPI</i>. All are instance methods.
+The following are instance methods for <i>BreadwinnerAPI</i>.
 <ul><li><b>Call()</b></li></ul>
 This is a global method which will return list of Customers or Invoices in the form of [BreadwinnerAPI.ResponseObject]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
 

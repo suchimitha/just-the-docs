@@ -7,7 +7,7 @@ nav_order: 2
 
 # Update Invoice
 
-To Update an Invoice pass the values to Invoice wrapper along with Id (InvoiceId) and assign it to request. xeroInvoice and then call the method BreadwinnerAPI.call().
+To Update an Invoice pass the values to Invoice wrapper along with Id (InvoiceId) and assign it to request.xeroInvoice and then call the method BreadwinnerAPI.call().
 
 ## Sample Code
 
