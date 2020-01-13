@@ -37,6 +37,8 @@ E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}
 2. <b>Request</b>: An instance of [RequestObject]({{ site.baseurl }}{% link docs/configuration.md %}) is accepted.<br/>
 E.g :  BreadwinnerAPI.RequestObject request = new BreadwinnerAPI.RequestObject();
 
+Note: This is an asynchronous method, it will make http callouts. So, to access "BreadwinnerAPI.Call()" method please enable callouts by annotating the future method, or use Queueable Apex.
+eg: @Future(callout=true) 
 ### Signature
 BreadwinnerAPI.ResponseObject call(String Action, BreadwinnerAPI.RequestObject request)
 
