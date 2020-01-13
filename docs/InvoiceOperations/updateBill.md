@@ -7,7 +7,7 @@ nav_order: 5
 
 # Update Bill
 
-To Update Bill pass the values to Invoice wrapper along with Id (InvoiceId) and assign it to request.xeroInvoice and then call the method BreadwinnerAPI.call().
+To Update Bill pass the values to Invoice wrapper along with InvoiceId (Xero identifier) and assign it to request.xeroInvoice and then call the method BreadwinnerAPI.call().
 
 ## Sample Code
 
@@ -15,7 +15,7 @@ To Update Bill pass the values to Invoice wrapper along with Id (InvoiceId) and 
 try{
     bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();
     bw_xero_api01.Invoice xi = new bw_xero_api01.Invoice ();
-    xi.InvoiceID = '5eac31f6-a05f-4a84-b3aa-47154c82afca';
+    xi.InvoiceID = '5eac31f6-a05f-4a84-b3aa-47154c82afca'; // Requried
     xi.DueDate = string.valueof(system.today()+30);
     bw_xero_api01.Invoice.LineItemWrapper li = new bw_xero_api01.Invoice.LineItemWrapper();
     li.ItemCode = ''; li.Description ='li desc';li.UnitAmount=500;li.Quantity=3;li.AccountCode='200';

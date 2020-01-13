@@ -6,6 +6,7 @@ nav_order: 2
 ---
 
 # Update Xero Contact
+To Update an Xero Contact pass the values to Accountwrapper along with contactId (Xero identifier) and assign it to request.xeroCustomer and then call the method BreadwinnerAPI.call().
 
 ## sample code 
 
@@ -14,7 +15,7 @@ try{
 	bw_xero_api01.BreadwinnerAPI.RequestObject req = new  bw_xero_api01.BreadwinnerAPI.RequestObject();	
 	bw_xero_api01.AccountWrapper str = new bw_xero_api01.AccountWrapper();
 	str.name='MY5 NAME Test Create -'; 
-	str.contactId ='tempId';		
+	str.contactId ='tempId'; //requried		
 	req.xeroCustomer = str;
 
 	bw_xero_api01.BreadwinnerAPI.ResponseObject res =  bw_xero_api01.BreadwinnerAPI.call('updateCustomer', req);

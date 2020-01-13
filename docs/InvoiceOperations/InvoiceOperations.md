@@ -17,6 +17,7 @@ The following parameters are required to create or update a Invoice
 | BrandingThemeID  | String  | All | Branding Theme Id or value (max length = 255)              |
 | CurrencyCode  | String |  All | The currency that invoice has been raised in              |
 | InvoiceDate | Date |  Invoice, Bill | Date invoice was issued - YYYY-MM-DD. If the Date element is not specified it will default to the current date based on the timezone setting of the organisation              |
+| InvoiceId | String | Xero generated unique identifier for Invoice/Bill , Requried while updating|
 | DueDate  | String |  Invoice, Bill |Date invoice is due - YYYY-MM-DD              |
 | ClientId   | String |  All | Xero generated unique identifier for Xero Contact (Xero Id)              |
 | Contact  | ContactWrapper |  All | Last name of contact person (max length = 255)              |
@@ -25,7 +26,7 @@ The following parameters are required to create or update a Invoice
 | DeliveryAddress  | String | Purchase Order | The address the goods are to be delivered to              |
 | DeliveryInstructions  | String | Purchase Order | A free text field for instructions (500 characters max)              |
 | Telephone  | String | Purchase Order | The phone number for the person accepting the delivery              |
-| PurchaseOrderID | String | Purchase Order | Xero generated unique identifier for purchase order              |
+| PurchaseOrderID | String | Purchase Order | Xero generated unique identifier for purchase order , Requried while updating             |
 | PurchaseOrderNumber | String | Purchase Order | Last name of contact person (max length = 255)              |
 | DeliveryDate | String | Purchase Order | Date the goods are to be delivered - YYYY-MM-DD              |
 | PurchaseOrderDate | String | Purchase Order | Date purchase order was issued - YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation              |

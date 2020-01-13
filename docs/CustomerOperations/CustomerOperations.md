@@ -13,7 +13,7 @@ The following is required to create or update a contact
 
 | Field  | Type                          | Description |
 |:----------|:-------------------------------------|
-| Name      | String | Full name of contact/organisation (max length = 255)  |
+| Name *    | String | Full name of contact/organisation (max length = 255), Requried  |
 | FirstName | String | First name of contact person (max length = 255)                 |
 | LastName  | String | Last name of contact person (max length = 255)              |
 | EmailAddress  | String | Email address of contact person (umlauts not supported) (max length = 255)             |
@@ -27,7 +27,7 @@ The following is required to create or update a contact
 | BillingCountry      | String | max length = 50, [A-Z], [a-z] only              |
 | BillingPostalCode      | String | max length = 50             |
 | Phone      |        String | Phone number of contact       |
-| ContactID      | String | Xero identifier              |
+| ContactID      | String | Xero identifier , requries while updating            |
 
 
 | PaymentTermWrapper Fields  | Type                          |
