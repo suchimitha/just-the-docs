@@ -44,10 +44,10 @@ eg: @Future(callout=true)
 BreadwinnerAPI.ResponseObject call(String Action, BreadwinnerAPI.RequestObject request)
 
 ### BreadwinnerAPI inner classes
-<ul>
-<li>RequestObject - Class</li> 
-<li>ResponseObject - Class</li>
-</ul>
+
+> - RequestObject - Class
+> - ResponseObject - Class
+
 
 
 
