@@ -49,4 +49,4 @@ Ex: Invoice sc = Response.XeroInvoice
     It's a map of Xero Invoices wrapper.
 
 ### rawResponse
-    it is the raw responce from Xero. 
+    It's a raw response from Xero. 

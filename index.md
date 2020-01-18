@@ -22,7 +22,7 @@ Currently, we are providing API to create, update and fetch Xero Contacts, Invoi
 Breadwinner Provides Apex classes and methods. Users can use these, in their own custom Apex code to perform there need. The following are the class and methods.
 
 ## BreadwinnerAPI Class 
-This is a global Class where you can access RequestObject and ResponseObject.
+This is a global class where you can access RequestObject and ResponseObject.
 
 ### Namespace
 "bw_xero_api01" : Use this name space to access <i>BreadwinnerAPI</i> class and methods. 

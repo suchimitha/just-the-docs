@@ -4,6 +4,28 @@ title: Request
 nav_order: 2
 ---
 
+
+## Actions
+It’s a string, used to define the type of action that needs to be performed. We are providing below types of actions.
+
+<ul>
+
+<li><b>createCustomer</b>: To create the customer in both Xero and Salesforce.</li>
+<li><b>updateCustomer</b>: To update the customer in both Xero and salesforce.</li>
+<li><b>fetchCustomers</b>: To get a list of customers.</li>
+<li><b>createInvoice</b> To create the Invoice in both Xero and Salesforce..</li>
+<li><b>updateInvoice</b>: To create the Invoice in both Xero and Salesforce.</li>
+<li><b>fetchInvoice</b>: Use this action to retrieve one or many Invoices.</li>
+<li><b>createBill</b>: To create the Bill in both Xero and Salesforce.</li>
+<li><b>updateBill</b>: To update the Bill in both Xero and salesforce.</li>
+<li><b>fetchBill</b>: Use this action to retrieve one or many Bills.</li>
+<li><b>createPurchaseOrder</b>: To create the Purchase Order in both Xero and Salesforce.</li>
+<li><b>updatePurchaseOrder</b>: To update the Purchase Order in both Xero and salesforce.</li>
+<li><b>fetchPurchaseOrder</b>: Use this action to retrieve one or many purchase orders.</li>
+
+</ul>
+
+
 # Request
 {: .no_toc }
 
@@ -37,22 +59,3 @@ Ex: bw_xero_api01.BreadwinnerAPI.Invoice inv = new bw_xero_api01.BreadwinnerAPI.
     inv.description = 'desc';… 
     req.xeroInvoice = inv;
 ```
-## Request Actions
-It’s a string, used to define the type of action that needs to be performed. We are providing below types of actions.
-
-<ul>
-
-<li><b>createCustomer</b>: To create the customer in both Xero and Salesforce.</li>
-<li><b>updateCustomer</b>: To update the customer in both Xero and salesforce.</li>
-<li><b>fetchCustomers</b>: To get a list of customers.</li>
-<li><b>createInvoice</b> To create the Invoice in both Xero and Salesforce..</li>
-<li><b>updateInvoice</b>: To create the Invoice in both Xero and Salesforce.</li>
-<li><b>fetchInvoice</b>: Use this action to retrieve one or many Invoices.</li>
-<li><b>createBill</b>: To create the Bill in both Xero and Salesforce.</li>
-<li><b>updateBill</b>: To update the Bill in both Xero and salesforce.</li>
-<li><b>fetchBill</b>: Use this action to retrieve one or many Bills.</li>
-<li><b>createPurchaseOrder</b>: To create the Purchase Order in both Xero and Salesforce.</li>
-<li><b>updatePurchaseOrder</b>: To update the Purchase Order in both Xero and salesforce.</li>
-<li><b>fetchPurchaseOrder</b>: Use this action to retrieve one or many purchase orders.</li>
-
-</ul>
