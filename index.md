@@ -29,7 +29,7 @@ This is a global class where you can access RequestObject and ResponseObject.
 
 ## BreadwinnerAPI Methods
 The following are instance methods for <i>BreadwinnerAPI</i>.
--<ul><li><b>Call()</b></li></ul>
+- Call()
 This is a global method which will return list of Customers or Invoices in the form of [BreadwinnerAPI.ResponseObject]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
 
  1. <b>Action</b>: Used to define the type of action that needs to be performed.<br/>
