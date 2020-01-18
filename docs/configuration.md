@@ -39,9 +39,12 @@ It consists of the following variables:
 ## 1. options 
 It is a collection of type Map (Map<String, Object>), used to pass any type of config settings that we enable.
     below options used for fetching records. <br/>
-    ContactId, ContactNumber, where, PageNumber, ModifiedAfter – for Contacts <br/>
-    InvoiceNumber, InvoiceId, where, PageNumber, ModifiedAfter – for Invoices, Bills <br/>
-    PurchaseOrderNumber, PurchaseOrderID, where, PageNumber, ModifiedAfter – for PurchaseOrders <br/>
+    <ul>
+    <li><b>Contacts</b> : ContactId, ContactNumber, where, PageNumber, ModifiedAfter</li>
+    <li><b>Invoices, Bills</b> : InvoiceNumber, InvoiceId, where, PageNumber, ModifiedAfter</li>
+    <li><b>PurchaseOrders</b> : PurchaseOrderNumber, PurchaseOrderID, where, PageNumber, ModifiedAfter</li>
+
+    </ul>
 Ex: req.options.put('PageNumber','1');
 
 ## 2. xeroCustomer
