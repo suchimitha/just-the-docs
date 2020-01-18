@@ -4,6 +4,9 @@ title: Request
 nav_order: 2
 ---
 
+# Request
+{: .no_toc }
+
 
 ## Actions
 It’s a string, used to define the type of action that needs to be performed. We are providing below types of actions.
@@ -26,8 +29,6 @@ It’s a string, used to define the type of action that needs to be performed. W
 </ul>
 
 
-# Request
-{: .no_toc }
 
 
 ### RequestObject - Class
