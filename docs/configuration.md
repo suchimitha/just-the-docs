@@ -13,18 +13,18 @@ It’s a string, used to define the type of action that needs to be performed. W
 
 <ul>
 
-<li><b>createContact</b>: To create the customer in both Xero and Salesforce.</li>
-<li><b>updateContact</b>: To update the customer in both Xero and salesforce.</li>
-<li><b>fetchContact</b>: To get a list of customers.</li>
-<li><b>createInvoice</b> To create the Invoice in both Xero and Salesforce..</li>
-<li><b>updateInvoice</b>: To create the Invoice in both Xero and Salesforce.</li>
-<li><b>fetchInvoice</b>: Use this action to retrieve one or many Invoices.</li>
-<li><b>createBill</b>: To create the Bill in both Xero and Salesforce.</li>
-<li><b>updateBill</b>: To update the Bill in both Xero and salesforce.</li>
-<li><b>fetchBill</b>: Use this action to retrieve one or many Bills.</li>
-<li><b>createPurchaseOrder</b>: To create the Purchase Order in both Xero and Salesforce.</li>
-<li><b>updatePurchaseOrder</b>: To update the Purchase Order in both Xero and salesforce.</li>
-<li><b>fetchPurchaseOrder</b>: Use this action to retrieve one or many purchase orders.</li>
+<li><b>createContact</b>: Creates a Xero Contact.</li>
+<li><b>updateContact</b>: Updates a Xero Contact.</li>
+<li><b>fetchContact</b>: Fetches a single Xero Contact or a list of Xero Contacts from Xero.</li>
+<li><b>createInvoice</b> Creates an Invoice in Xero.</li>
+<li><b>updateInvoice</b>: Updates in Invoice in Xero.</li>
+<li><b>fetchInvoice</b>: Fetches either a single Invoice or list of Invoices from Xero.</li>
+<li><b>createBill</b>: Creates a Bill in Xero.</li>
+<li><b>updateBill</b>: Updates a Bill in Xero.</li>
+<li><b>fetchBill</b>: Fetches either a single Bill or list of Bills from Xero.</li>
+<li><b>createPurchaseOrder</b>: Creates a Purchase Order (PO) in Xero.</li>
+<li><b>updatePurchaseOrder</b>: Updates a Purchase Order (PO) in Xero.</li>
+<li><b>fetchPurchaseOrder</b>: Fetches either a single Purhcase Order or list of Purchase Orders from Xero.</li>
 
 </ul>
 
