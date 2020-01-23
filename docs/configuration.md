@@ -13,9 +13,9 @@ It’s a string, used to define the type of action that needs to be performed. W
 
 <ul>
 
-<li><b>createCustomer</b>: To create the customer in both Xero and Salesforce.</li>
-<li><b>updateCustomer</b>: To update the customer in both Xero and salesforce.</li>
-<li><b>fetchCustomers</b>: To get a list of customers.</li>
+<li><b>createContact</b>: To create the customer in both Xero and Salesforce.</li>
+<li><b>updateContact</b>: To update the customer in both Xero and salesforce.</li>
+<li><b>fetchContact</b>: To get a list of customers.</li>
 <li><b>createInvoice</b> To create the Invoice in both Xero and Salesforce..</li>
 <li><b>updateInvoice</b>: To create the Invoice in both Xero and Salesforce.</li>
 <li><b>fetchInvoice</b>: Use this action to retrieve one or many Invoices.</li>
