@@ -1,10 +1,10 @@
 {
-  "name": "Breadwinner-XeroApi",
+  "name": "just-the-docs",
   "version": "0.2.7",
   "description": "A modern Jekyll theme for documentation",
-  "repository": "pmarsceill/Breadwinner-XeroApi",
+  "repository": "pmarsceill/just-the-docs",
   "license": "MIT",
-  "bugs": "https://suchimitha.github.io/Breadwinner-XeroApi/issues",
+  "bugs": "https://suchimitha.github.io/just-the-docs/issues",
   "devDependencies": {
     "stylelint": "^10.0.1",
     "stylelint-config-primer": "^8.0.0",
