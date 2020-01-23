@@ -15,7 +15,7 @@ When we call “BreadwinnerAPI.call()” method, User would get the response in 
 
 ### Status: 
 It’s a string, which represents the Response Code/status code of the request. <br/>
-Ex: ‘200’ - for success Response. click [here](https://developer.xero.com/documentation/api/http-response-codes) for more Status codes information.
+Ex: ‘200’ - for success Response. Click [here](https://developer.xero.com/documentation/api/http-response-codes) for more Status codes information.
 
 ### xeroCustomer:
 It’s XeroCustomer wrapper instance which contains created Xero Customer data along with Xero Id.<br/>
