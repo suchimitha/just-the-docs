@@ -33,9 +33,9 @@ The following are instance methods for <i>BreadwinnerAPI</i>.
 This is a global method which will return list of Customers or Invoices in the form of [BreadwinnerAPI.ResponseObject]({{ site.baseurl }}{% link docs/response.md %}). It takes two parameters.
 
 > 1. <b>Action</b>: Used to define the type of action that needs to be performed.<br/>
-E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}{% link docs/configuration.md %})
+E.g : createCustomer, createInvoice,… see [List of actions]({{ site.baseurl }}{% link docs/request.md %})
 
->  2. <b>Request</b>: An instance of [RequestObject]({{ site.baseurl }}{% link docs/configuration.md %}) is accepted.<br/>
+>  2. <b>Request</b>: An instance of [RequestObject]({{ site.baseurl }}{% link docs/request.md %}) is accepted.<br/>
 E.g :  BreadwinnerAPI.RequestObject request = new BreadwinnerAPI.RequestObject();
 
 Note: This is an synchronous method, it will make http callouts. So, to access "BreadwinnerAPI.Call()" method please enable callouts by annotating the future method, or use Queueable Apex.<br/>
